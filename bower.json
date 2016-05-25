@@ -1,0 +1,8 @@
+{
+  "name": "sedona",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizer": "~2.8.2",
+    "normalize-css": "~3.0.3"
+  }
+}
