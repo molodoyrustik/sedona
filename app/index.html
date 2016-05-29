@@ -106,18 +106,18 @@
                 <div class="our-offers-wrap">
 
                     <div class="our-offers__first">
-                        <h3 class="our-offers__title">Жилье</h3>
-                        <p class="our-offers__text">Рекомендуем пожить в настоящием мотеле, все как в кино!</p>
+                        <h3 class="our-offers__first__title">Жилье</h3>
+                        <p class="our-offers__first__text">Рекомендуем пожить в настоящием мотеле, все как в кино!</p>
                     </div>
 
                     <div class="our-offers__second">
-                        <h3 class="our-offers__title">Еда</h3>
-                        <p class="our-offers__text">Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
+                        <h3 class="our-offers__second__title">Еда</h3>
+                        <p class="our-offers__second__text">Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
                     </div>
 
                     <div class="our-offers__third">
-                        <h3 class="our-offers__title">Сувениры</h3>
-                        <p class="our-offers__text">Не только китайского, но и местного производства!</p>
+                        <h3 class="our-offers__third__title">Сувениры</h3>
+                        <p class="our-offers__third__text">Не только китайского, но и местного производства!</p>
                     </div>
 
                 </div>
@@ -125,32 +125,32 @@
 
             <div class="second-row__part-two">
 
-                <img src="images/mobile/1x/second-row-img2-mob@1x.jpg" alt="" class="second-row__part-two__img2">
-
-                <div class="second-row__block-for-img">
+                <div class="second-row__block-for-img2">
                     <h3 class="second-row__true-city__title">Там есть мост дьявола</h3>
                     <p class="second-row__true-city__number">— №2 —</p>
                     <p class="second-row__true-city_text">Да, по нему можно пройти! если конечно вы осмелитесь</p>
                 </div>
 
+                <img src="images/mobile/1x/second-row-img2-mob@1x.jpg" alt="" class="second-row__part-two__img2">
+
                 <div class="our-offers-wrap-two">
 
-                    <div class="our-offers">
-                        <h3 class="second-row__true-city__title">Небольшая площадь</h3>
-                        <p class="second-row__true-city__number">— №3 —</p>
-                        <p class="second-row__true-city_text">Все достопримечательности находятся очень близко</p>
+                    <div class="our-offers__fourth">
+                        <h3 class="our-offers__fourth__title">Небольшая площадь</h3>
+                        <p class="our-offers__fourth__number">— №3 —</p>
+                        <p class="our-offers__fourth_text">Все достопримечательности находятся очень близко</p>
                     </div>
 
-                    <div class="our-offers">
-                        <h3 class="second-row__true-city__title">Красивая дорога</h3>
-                        <p class="second-row__true-city__number">— №4 —</p>
-                        <p class="second-row__true-city_text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+                    <div class="our-offers__fourth">
+                        <h3 class="our-offers__fourth__title">Красивая дорога</h3>
+                        <p class="our-offers__fourth__number">— №4 —</p>
+                        <p class="our-offers__fourth_text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
                     </div>
 
-                    <div class="our-offers">
-                        <h3 class="second-row__true-city__title">Мало туристов</h3>
-                        <p class="second-row__true-city__number">— №5 —</p>
-                        <p class="second-row__true-city_text">Большинство едет в гранд Каньон и толпится там</p>
+                    <div class="our-offers__fourth">
+                        <h3 class="our-offers__fourth__title">Мало туристов</h3>
+                        <p class="our-offers__fourth__number">— №5 —</p>
+                        <p class="our-offers__fourth_text">Большинство едет в гранд Каньон и толпится там</p>
                     </div>
 
                 </div>
@@ -165,22 +165,27 @@
                 <p class="third-row__text">Укажите предполагаемые даты поездки и мы покажаем вам лучшие предложения гостиниц в седоне</p>
             </div>
 
-            <div class="modal-search">
+            <div class="modal-search" >
 
-                <p class="modal-search__title">Поиск гостиницы в седоне</p>
-                
-                <label for="race" class="label-race">Дата заезда:</label>
-                <input type="datetime-local" id="race" class="input-race" >
-                
-                <label for="exit" class="label-race">Дата выезда:</label>
-                <input type="datetime-local" id="exit" class="input-race" >
+                <form action="" class="modal-form">
 
-                <label for="parents" class="label-parents">Взрослые:</label>
-                <input type="text" id="parents" class="input-parents">
+                    <p class="modal-search__title">Поиск гостиницы в седоне</p>
 
-                <label for="children" class="label-children">Дети:</label>
-                <input type="text" id="children" class="input-children">
+                    <label for="race" class="label-race">Дата заезда:</label>
+                    <input type="datetime-local" id="race" class="input-race" >
 
+                    <label for="exit" class="label-race">Дата выезда:</label>
+                    <input type="datetime-local" id="exit" class="input-race" >
+
+                    <label for="parents" class="label-parents">Взрослые:</label>
+                    <input type="text" id="parents" class="input-parents">
+
+                    <label for="children" class="label-children">Дети:</label>
+                    <input type="text" id="children" class="input-children">
+
+                    <button type="submit" class="modal-search__btn-submit">Найти</button>
+
+                </form>
             </div>
 
             <div class="map"></div>
