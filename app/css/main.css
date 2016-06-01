@@ -46,6 +46,7 @@ body{
 .navigation-mobile-list{
     display: none;
     flex-direction: column;
+    min-height: 55px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -74,6 +75,9 @@ body{
 .navigation-mobile-link:hover{
     background-color: #669ec0;
 }
+.wrap-for-burger-menu{
+    position: relative;
+}
 .navigation-mobile__logo-link {
     display: block;
     width: 140px;
@@ -87,9 +91,7 @@ body{
     width: 140px;
     margin-left: -70px;
 }
-.wrap-for-burger-menu{
-    position: relative;
-}
+
 .menu-burger{
     position: absolute;
     top: 15px;
@@ -145,6 +147,7 @@ body{
      background-repeat: no-repeat;
      background-size: 320px 561px;
      background-color: #ffffff;
+    background-position: center 0px;
  }
 @media (min-resolution: 2dppx) {
     .first-row{
@@ -162,6 +165,8 @@ body{
     margin-bottom: 90px;
 }
 .main-logo{
+    width: 280px;
+    height: 295px;
     margin-top: 50px;
 }
 .first-row__wrap-title{
@@ -203,12 +208,25 @@ body{
 }
 .second-row__block-for-img{
     width: 320px;
+    margin: 0 auto;
     padding-top: 65px;
     text-align: center;
     background-color: #81b3d2;
     background-image: url(../images/mobile/1x/second-row-line-mod@1x.png);
     background-repeat: no-repeat;
     background-position: center -10px;
+    background-size: 320px 40px;
+}
+@media (min-resolution: 2dppx){
+    .second-row__block-for-img{
+        background-image: url(../images/mobile/2x/second-row-line-mod@2x.png);
+    }
+
+}
+@media (min-resolution: 3dppx){
+    .second-row__block-for-img{
+        background-image: url(../images/mobile/3x/second-row-line-mod@3x.png);
+    }
 }
 .second-row__block-for-img:nth-child(2){
     background-image: none;
@@ -225,7 +243,7 @@ body{
 .second-row__true-city__number{
     margin-bottom: 10px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 12px;
 }
 .second-row__true-city_text{
     width: 260px;
@@ -237,8 +255,10 @@ body{
 }
 
 .second-row__part-one__img{
+    width: 320px;
+    height: 256px;
     display: block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 .our-offers-wrap{
@@ -267,6 +287,28 @@ body{
     background-repeat: no-repeat;
     background-size: 37px 37px ;
     background-position: 22px center;
+}
+@media (min-resolution: 2dppx) {
+    .our-offers__first__title{
+        background-image: url(../images/desktop/2x/second-row-house@2x.png);
+    }
+    .our-offers__second__title{
+        background-image: url(../images/desktop/2x/second-row-burger@2x.png);
+    }
+    .our-offers__third__title{
+        background-image: url(../images/desktop/2x/second-row-present@2x.png);
+    }
+}
+@media (min-resolution: 3dppx) {
+    .our-offers__first__title{
+        background-image: url(../images/desktop/3x/second-row-house@3x.png);
+    }
+    .our-offers__second__title{
+        background-image: url(../images/desktop/3x/second-row-burger@3x.png);
+    }
+    .our-offers__third__title{
+        background-image: url(../images/desktop/3x/second-row-present@3x.png);
+    }
 }
 .our-offers__first__text{
     width: 210px;
@@ -382,6 +424,7 @@ body{
     text-transform: uppercase;
 }
 .third-row{
+
 }
 .third-row-wrap-title{
     padding-top: 25px;
@@ -390,8 +433,9 @@ body{
 
 }
 .third-row__title{
+    margin: 0;
     color: #000000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
@@ -412,6 +456,7 @@ body{
 }
 .modal-form{
     background-color: #ffffff;
+
 }
 .modal-search__title{
     margin: 0;

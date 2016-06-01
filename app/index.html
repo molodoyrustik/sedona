@@ -13,7 +13,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/table.css">
 </head>
 <body>
 <header class="page-header">
@@ -43,35 +43,9 @@
                         <img width="138" height="70" src="images/desktop/1x/header-logo-desk@1x.png" srcset="images/desktop/2x/header-logo-desk@2x.png 2x, images/desktop/3x/header-logo-desk@3x.png 3x" alt="" class="navigation-mobile__logo-img">
                     </picture>
                 </a>
-
                 <div class="menu-burger"></div>
-
             </div>
 
-        </nav>
-
-        <nav class="navigation">
-            <ul class="navigation-list">
-                <li class="navigation-item">
-                    <a href="" class="navigation-link">Информация</a>
-                </li>
-                <li class="navigation-item">
-                    <a href="" class="navigation-link">Фото и видео</a>
-                </li>
-                <li class="navigation-item">
-                    <a href="" class="navigation-link">
-                        <picture>
-                            <img width="138" height="70" src="images/desktop/1x/header-logo-desk@1x.png" srcset="images/desktop/2x/header-logo-desk@2x.png 2x, images/desktop/3x/header-logo-desk@3x.png 3x" alt="" class="navigation-item__logo-img">
-                        </picture>
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a href="" class="navigation-link">Карта штата</a>
-                </li>
-                <li class="navigation-item">
-                    <a href="" class="navigation-link">Гостиницы</a>
-                </li>
-            </ul>
         </nav>
 
     </div>
@@ -82,7 +56,8 @@
         <section class="first-row">
             <div class="logo-wrap">
                 <picture>
-                    <img  width="280" height="295" src="images/mobile/1x/first-row-logo-mob@1x.png" srcset="images/mobile/2x/first-row-logo-mob@2x.png 2x, images/mobile/3x/first-row-logo-mob@3x.png 3x," alt="" class="main-logo">
+                    <source media="(min-width:768px)" srcset="images/table/1x/first-row-logo-tab@1x.png">
+                    <img src="images/mobile/1x/first-row-logo-mob@1x.png" srcset="images/mobile/2x/first-row-logo-mob@2x.png 2x, images/mobile/3x/first-row-logo-mob@3x.png 3x," alt="" class="main-logo">
                 </picture>
             </div>
             <div class="first-row__wrap-title">
@@ -101,7 +76,10 @@
                     <p class="second-row__true-city_text">Седона не атракцион для туристов, там течет своя жизнь</p>
                 </div>
 
-                <img src="images/mobile/1x/second-row-img-mob@1x.jpg" alt="" class="second-row__part-one__img">
+                <picture>
+                    <source media="(min-width:768px)" src='images/table/1x/second-row-img-tab@1x.jpg' srcset=" images/table/2x/second-row-img-tab@2x.jpg 2x, images/table/3x/second-row-img-tab@3x.jpg 3x">
+                    <img src="images/mobile/1x/second-row-img-mob@1x.jpg" srcset="images/mobile/1x/second-row-img-mob@1x.jpg 2x, images/mobile/1x/second-row-img-mob@1x.jpg 3x"  alt="" class="second-row__part-one__img">
+                </picture>
 
                 <div class="our-offers-wrap">
 
@@ -123,22 +101,25 @@
                 </div>
             </div>
 
-            <div class="second-row__part-two">
+            <div class="second-row__part-two clearfix">
 
                 <div class="second-row__block-for-img2">
                     <h3 class="second-row__true-city__title">Там есть мост дьявола</h3>
                     <p class="second-row__true-city__number">— №2 —</p>
-                    <p class="second-row__true-city_text">Да, по нему можно пройти! если конечно вы осмелитесь</p>
+                    <p class="second-row__true-city_text second-row__true-city_text--mod">Да, по нему можно пройти! если конечно вы осмелитесь</p>
                 </div>
 
-                <img src="images/mobile/1x/second-row-img2-mob@1x.jpg" alt="" class="second-row__part-two__img2">
+                <picture>
+                    <source media="(min-width:768px)" src="images/table/1x/second-row-img2-tab@1x.jpg" srcset=" images/table/2x/second-row-img2-tab@2x.jpg 2x, images/table/3x/second-row-img2-tab@3x.jpg 3x">
+                    <img src="images/mobile/1x/second-row-img2-mob@1x.jpg" srcset="images/mobile/2x/second-row-img2-mob@2x.jpg 2x, images/mobile/3x/second-row-img2-mob@3x.jpg 3x" alt="" class="second-row__part-two__img2">
+                </picture>
 
                 <div class="our-offers-wrap-two">
 
                     <div class="our-offers__fourth">
                         <h3 class="our-offers__fourth__title">Небольшая площадь</h3>
                         <p class="our-offers__fourth__number">— №3 —</p>
-                        <p class="our-offers__fourth_text">Все достопримечательности находятся очень близко</p>
+                        <p class="our-offers__fourth_text">Все достопримеча-тельности находятся очень близко</p>
                     </div>
 
                     <div class="our-offers__fourth">
@@ -166,10 +147,10 @@
             </div>
 
             <div class="modal-search" >
+                <p class="modal-search__title">Поиск гостиницы в седоне</p>
 
                 <form action="" class="modal-form">
 
-                    <p class="modal-search__title">Поиск гостиницы в седоне</p>
 
                     <label for="race" class="label-race">Дата заезда:</label>
                     <input type="datetime-local" id="race" class="input-race" >
