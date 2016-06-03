@@ -38,6 +38,7 @@
         color: #000000;
         font-size: 14px;
         font-weight: 600;
+        line-height: 26px;
         text-transform: uppercase;
         text-decoration: none;
         background-color: #ffffff;
@@ -112,7 +113,9 @@
     }
     .first-row__title{
         margin-bottom: 35px;
-        font-size: 18px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
     }
     .first-row__text{
         width: 500px;
@@ -191,6 +194,7 @@
         font-weight: 700;
         text-transform: uppercase;
         text-align: center;
+        background-image: url(../images/desktop/1x/second-row-house@1x.png);
         background-size: 72px 72px ;
         background-position: center;
     }
@@ -346,7 +350,7 @@
         font-size: 13px;
     }
     .third-row{
-        height: 890px;
+        height: auto;
     }
     .third-row-wrap-title{
         padding-top: 50px;
@@ -503,7 +507,7 @@
         margin-left: -384px;
         padding-top: 35px;
         padding-bottom: 35px;
-        bottom: -90px;
+        bottom: -5px;
         background-image: url(../images/desktop/1x/footer-bg-pattern@1x.png);
     }
     .footer-logo{
